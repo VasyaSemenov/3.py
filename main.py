@@ -12,3 +12,7 @@ l = sorted([random.choice(range(1000000)) for i in range(100)])
 (y['sum_rand'] == sum_(Z, for_each=Z)) <= Z.in_(l)
 print(y['sum_rand'] == SumRand)
 print("Median: ", (l[49] + l[50]) / 2)
+
+# Произведение
+import functools
+print (functools.reduce(lambda a, b : a * b, [random.choice(range(99999)) for i in range(100)]))
